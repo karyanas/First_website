@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>Morocco's Virtual Kitchen - Book a Lesson With Us</title>
+    <link rel="icon" href="moroccan-teapot.png" type="image/x-icon">
+    <link rel="stylesheet" type="text/css" href="portfolio-01.css">
+    <script src="javascript.js" defer></script>
+</head>
+
+<body>
+    <header id="main-header">
+        <h1 id="title">Book a Private Cooking Lesson With Us!</h1>
+        <nav>
+            <a href="home.html">Home</a>
+            <a href="recipes.html">Recipes</a>
+            <a href="contact.html">Book a Lesson</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="card">
+            <section id="contact-form">
+                <h2>Get in Touch</h2>
+                <form id="contactForm" onsubmit="return validateForm()">
+                    <input type="text" id="name" placeholder="Full Name" required>
+
+                    <input type="email" id="email" placeholder="Email" required>
+                    <br>
+
+                    <input type="email" id="confirm-email" placeholder="Confirm Email" required>
+
+                    <input type="tel" id="telephone" placeholder="Phone Number">
+                    <br><br>
+                    <label for="contact-method">Preferred Contact Method:</label>
+                    <select id="contact-method" name="contact-method">
+                        <option value="phone">Phone</option>
+                        <option value="email">Email</option>
+                    </select>
+                    <br><br>
+
+                    <label for="contact-method">Choose the dish you wish to cook:</label>
+                    <select id="contact-method" name="contact-method">
+                        <option value="phone">Moroccan Lamb Tagine</option>
+                        <option value="email">Chicken Couscous</option>
+                        <option value="email">Harira Soup</option>
+                    </select>
+                    <br><br>
+                    <label for="appointment">Book a Private Cooking Lesson:</label>
+                    <input type="date" id="appointment-date" name="appointment" required>
+                    <br><br>
+                    <button type="submit">Submit</button>
+                </form>
+            </section>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Morocco's Virtual Kitchen | <a href="contact.html">Contact Us</a></p>
+    </footer>
+</body>
+
+</html>
